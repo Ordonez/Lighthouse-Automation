@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 const execSync = require('child_process').execSync;
-let urls = require('./testUrls.json'); // The file where your list of urls lives
-let runs = 0
-for (const url of urls) {
-    console.log(`Running performance test ${runs + 1}`); // Logs this to the console just before it kicks off
+let url = "https://www.decorplanet.com/"; // Change this to the url you want to run your performance tests against
+let runs = 0;
+let runLimit = 1; // Change this to be the number of performance tests you want to do
+do {
+    console.log(`Starting performance test ${runs + 1}`); // Logs this to the console just before it kicks off
     try {
         execSync(`lighthouse ${url}`); // Executes this on the command line to run the performance test
     }
@@ -14,4 +15,5 @@ for (const url of urls) {
     console.log(`Finished running performance test ${runs + 1}`); // Logs this to the console just after it finishes running each performance test
     runs++;
 }
+while (runs < runLimit); // Keeps looping around until this condition is false
 console.log(`All finished`);
