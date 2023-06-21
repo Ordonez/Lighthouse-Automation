@@ -1,4 +1,9 @@
 #!/usr/bin/env node
+
+//This script runs multiple urls at the same time to perform performance and accessibility testing
+//The script utilizes a data sheet which will contain a list of all the urls than need to be ran
+
+
 const execSync = require('child_process').execSync;
 let urls = require('./testUrls.json'); // The file where your list of urls lives
 let runs = 0
