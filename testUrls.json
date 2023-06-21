@@ -1,16 +1,6 @@
-{
-    "DecorPlanet":  [
-        {
-            "pageName": "Homepage",
-            "url": "https://www.decorplanet.com/"
-        },
-        {
-            "pageName": "Vanities PLP",
-            "url": "https://www.decorplanet.com/view-all-bathroom-vanities"
-        },
-        {
-            "pageName": "Sinks PLP",
-            "url": "https://www.decorplanet.com/view-all-bathroom-sinks"
-        }
-    ]
-}
+
+[ "https://www.decorplanet.com/",
+"https://www.decorplanet.com/view-all-bathroom-vanities",
+"https://www.decorplanet.com/view-all-bathroom-sinks",
+"https://www.decorplanet.com/bathroom-accessories-towel-warmers"
+]
