@@ -1,18 +1,18 @@
 #!/usr/bin/env node
 const execSync = require('child_process').execSync;
-let url = "https://www.decorplanet.com/"; // Change this to the url you want to run your performance tests against
+let url = "https://www.decorplanet.com/"; // Url that runs the tests
 let runs = 0;
-let runLimit = 1; // Change this to be the number of performance tests you want to do
+let runLimit = 1; // the number of performance tests to run
 do {
     console.log(`Starting performance test ${runs + 1}`); // Logs this to the console just before it kicks off
     try {
         execSync(`lighthouse ${url}`); // Executes this on the command line to run the performance test
     }
     catch(err) {
-        console.log(`Performance test ${runs + 1} failed`); // If Lighthouse happens to fail it'll log this to the console and log the error message
+        console.log(`Performance test ${runs + 1} failed`); // If Lighthouse fails display this error message in console
         break;
     }
-    console.log(`Finished running performance test ${runs + 1}`); // Logs this to the console just after it finishes running each performance test
+    console.log(`Finished running performance test ${runs + 1}`); // Finish message after each completed test run
     runs++;
 }
 while (runs < runLimit); // Keeps looping around until this condition is false
