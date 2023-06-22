@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+// This script will run performance and accessibility tests on whatever url is entered. 
+//Edit the runlimit to adjust the amount of iterations performed
+
+
 const execSync = require('child_process').execSync;
 let url = "https://www.decorplanet.com/"; // Url that runs the tests
 let runs = 0;
