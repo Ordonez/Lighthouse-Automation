@@ -5,7 +5,7 @@
 
 
 const execSync = require('child_process').execSync;
-let url = "https://www.reggioregister.com/"; // Url that runs the tests
+let url = "https://www.rtacabinetstore.com/"; // Url that runs the tests
 let runs = 0;
 let runLimit = 2; // the number of performance tests to run
 do {
