@@ -1,5 +1,7 @@
 #!/usr/bin/env node
+
 // This script will run performance and accessibility tests on whatever url is entered. 
+
 //Edit the runlimit to adjust the amount of iterations performed
 //The default runLimit is set to 2. Adjust based on preferences
 
